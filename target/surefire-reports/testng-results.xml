@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-12-01T05:17:58 MSK" name="Command line suite" finished-at="2022-12-01T05:19:00 MSK" duration-ms="61766">
+    <groups>
+    </groups>
+    <test started-at="2022-12-01T05:17:58 MSK" name="Command line test" finished-at="2022-12-01T05:19:00 MSK" duration-ms="61766">
+      <class name="Page_object.test.ICanWinTest">
+        <test-method is-config="true" signature="browserSetup()[pri:0, instance:Page_object.test.ICanWinTest@2aece37d]" started-at="2022-12-01T05:18:45 MSK" name="browserSetup" finished-at="2022-12-01T05:18:46 MSK" duration-ms="926" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method signature="CreateNewPaste()[pri:0, instance:Page_object.test.ICanWinTest@2aece37d]" started-at="2022-12-01T05:18:46 MSK" name="CreateNewPaste" finished-at="2022-12-01T05:18:50 MSK" duration-ms="3800" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateNewPaste -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:Page_object.test.ICanWinTest@2aece37d]" started-at="2022-12-01T05:18:50 MSK" name="quitDriver" finished-at="2022-12-01T05:18:50 MSK" duration-ms="268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Page_object.test.ICanWinTest -->
+      <class name="Page_object.test.GoogleCloudTest">
+        <test-method is-config="true" signature="browserSetup()[pri:0, instance:Page_object.test.GoogleCloudTest@3c87521]" started-at="2022-12-01T05:18:03 MSK" name="browserSetup" finished-at="2022-12-01T05:18:04 MSK" duration-ms="949" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method signature="GoogleCloudPricingCalculatorTest()[pri:0, instance:Page_object.test.GoogleCloudTest@3c87521]" started-at="2022-12-01T05:18:04 MSK" name="GoogleCloudPricingCalculatorTest" finished-at="2022-12-01T05:18:45 MSK" duration-ms="40863" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoogleCloudPricingCalculatorTest -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:Page_object.test.GoogleCloudTest@3c87521]" started-at="2022-12-01T05:18:45 MSK" name="quitDriver" finished-at="2022-12-01T05:18:45 MSK" duration-ms="382" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Page_object.test.GoogleCloudTest -->
+      <class name="Page_object.test.BringItOnTest">
+        <test-method is-config="true" signature="browserSetup()[pri:0, instance:Page_object.test.BringItOnTest@75f9eccc]" started-at="2022-12-01T05:17:58 MSK" name="browserSetup" finished-at="2022-12-01T05:18:00 MSK" duration-ms="1944" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method signature="CreateNewPaste()[pri:0, instance:Page_object.test.BringItOnTest@75f9eccc]" started-at="2022-12-01T05:18:00 MSK" name="CreateNewPaste" finished-at="2022-12-01T05:18:03 MSK" duration-ms="2241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateNewPaste -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:Page_object.test.BringItOnTest@75f9eccc]" started-at="2022-12-01T05:18:03 MSK" name="quitDriver" finished-at="2022-12-01T05:18:03 MSK" duration-ms="351" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Page_object.test.BringItOnTest -->
+      <class name="Page_object.test.SpotifyTest">
+        <test-method is-config="true" signature="browserSetup()[pri:0, instance:Page_object.test.SpotifyTest@548a102f]" started-at="2022-12-01T05:18:50 MSK" name="browserSetup" finished-at="2022-12-01T05:18:51 MSK" duration-ms="859" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method signature="CreateNewPlayListAtTheAccount()[pri:0, instance:Page_object.test.SpotifyTest@548a102f]" started-at="2022-12-01T05:18:51 MSK" name="CreateNewPlayListAtTheAccount" finished-at="2022-12-01T05:19:00 MSK" duration-ms="8684" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateNewPlayListAtTheAccount -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:Page_object.test.SpotifyTest@548a102f]" started-at="2022-12-01T05:19:00 MSK" name="quitDriver" finished-at="2022-12-01T05:19:00 MSK" duration-ms="460" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Page_object.test.SpotifyTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
