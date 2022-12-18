@@ -1,7 +1,10 @@
 package Page_object.page;
 
+import Page_object.Model.User;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,7 +15,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class SpotifyHomePage {
-
+    private final Logger logger = LogManager.getRootLogger();
     private WebDriver driver;
 
 
@@ -26,12 +29,13 @@ public class SpotifyHomePage {
     @FindBy(xpath = "//button[@id='login-button']")
     private WebElement buttonLoginIntoAccount;
 
-    public SpotifyHomePage loginIntoAccount(String login, String password) {
+    public SpotifyHomePage loginIntoAccount(User user) {
         buttonOpenLoginForm.click();
-        waitForElementLocatedBy(driver,By.xpath("//input[@id='login-username']"));
-        inputEmail.sendKeys(login);
-        inputPassword.sendKeys(password);
+        waitForElementLocatedBy(driver,inputEmail);
+        inputEmail.sendKeys(user.getUsername());
+        inputPassword.sendKeys(user.getPassword());
         buttonLoginIntoAccount.click();
+        logger.info("Main page opened!");
         return this;
     }
 
@@ -39,9 +43,9 @@ public class SpotifyHomePage {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
-    private static WebElement waitForElementLocatedBy(WebDriver driver, By by) {
+    private static WebElement waitForElementLocatedBy(WebDriver driver, WebElement by) {
         return new WebDriverWait(driver, Duration.ofSeconds(4))
-                .until(ExpectedConditions.presenceOfElementLocated(by));
+                .until(ExpectedConditions.elementToBeClickable(by));
     }
 
 
